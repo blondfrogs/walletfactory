@@ -3,3 +3,5 @@ USER_WALLET_ADDRESS= # Address of deployed user wallet
 TEST_TOKEN_ADDRESS= # Mock USDT token address
 SWEEP_ADDRESS= # Where ETH/tokens will be sent
 SWEEP_ROLE_OWNER= # Who can call the sweep functions
+
+INFURA_API_KEY= # API key for infura rpc node

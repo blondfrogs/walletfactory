@@ -1,0 +1,31 @@
+// config/providers.js
+require("dotenv").config();
+
+module.exports = {
+  ethereum: {
+    freeRPCs: [
+      "https://ethereum-rpc.publicnode.com",
+      "https://cloudflare-eth.com",
+    ],
+    paidRPCs: [
+      `https://rpc.ankr.com/eth/${process.env.ANKR_API_KEY}`,
+      `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      `https://eth-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
+      // Add others as needed
+    ],
+  },
+
+  polygon: {
+    freeRPCs: [
+      "https://polygon-bor-rpc.publicnode.com",
+    ],
+    paidRPCs: [
+      `https://rpc.ankr.com/polygon/${process.env.ANKR_API_KEY}`,
+      `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,
+      `https://polygon-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
+      // Add others as needed
+    ],
+  },
+
+  // Add more chains as needed...
+};

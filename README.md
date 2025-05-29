@@ -79,6 +79,7 @@ Tests include:
 npx hardhat node
 ```
 In another window
+Update .env file with correct addresses as you deploy the contracts
 ```bash
 npx hardhat run scripts/deploy.ts --network localhost
 npx hardhat run scripts/deployMockUSDT.ts --network localhost
